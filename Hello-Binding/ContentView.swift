@@ -14,8 +14,9 @@ struct ContentView: View {
 				NavigationLink(destination: SpicyList()) {
 					Text("Spicy List")
 				}
-				// Add more navigation links for other pages
-				
+				NavigationLink(destination: HelloBinding()) {
+					Text("Hello Binding")
+				}
 			}
 			.listStyle(PlainListStyle())
 			.navigationBarTitle("Section 5")
