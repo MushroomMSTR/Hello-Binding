@@ -14,6 +14,8 @@
 		746C35502A29F6E50077E569 /* Dish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C354F2A29F6E50077E569 /* Dish.swift */; };
 		746C35542A2A09410077E569 /* SpicyList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C35532A2A09410077E569 /* SpicyList.swift */; };
 		746C35562A2A118E0077E569 /* HelloBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C35552A2A118E0077E569 /* HelloBinding.swift */; };
+		746C35582A2A159F0077E569 /* PodcatsPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C35572A2A159F0077E569 /* PodcatsPlayer.swift */; };
+		746C355A2A2A15DF0077E569 /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 746C35592A2A15DF0077E569 /* Episode.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		746C354F2A29F6E50077E569 /* Dish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dish.swift; sourceTree = "<group>"; };
 		746C35532A2A09410077E569 /* SpicyList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpicyList.swift; sourceTree = "<group>"; };
 		746C35552A2A118E0077E569 /* HelloBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloBinding.swift; sourceTree = "<group>"; };
+		746C35572A2A159F0077E569 /* PodcatsPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcatsPlayer.swift; sourceTree = "<group>"; };
+		746C35592A2A15DF0077E569 /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 				746C35422A29F4970077E569 /* ContentView.swift */,
 				746C35532A2A09410077E569 /* SpicyList.swift */,
 				746C35552A2A118E0077E569 /* HelloBinding.swift */,
+				746C35572A2A159F0077E569 /* PodcatsPlayer.swift */,
 				746C35442A29F4980077E569 /* Assets.xcassets */,
 				746C35462A29F4980077E569 /* Preview Content */,
 			);
@@ -80,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				746C354F2A29F6E50077E569 /* Dish.swift */,
+				746C35592A2A15DF0077E569 /* Episode.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,9 +162,11 @@
 			files = (
 				746C35502A29F6E50077E569 /* Dish.swift in Sources */,
 				746C35562A2A118E0077E569 /* HelloBinding.swift in Sources */,
+				746C355A2A2A15DF0077E569 /* Episode.swift in Sources */,
 				746C35432A29F4970077E569 /* ContentView.swift in Sources */,
 				746C35542A2A09410077E569 /* SpicyList.swift in Sources */,
 				746C35412A29F4970077E569 /* Hello_BindingApp.swift in Sources */,
+				746C35582A2A159F0077E569 /* PodcatsPlayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

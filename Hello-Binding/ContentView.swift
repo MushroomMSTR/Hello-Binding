@@ -17,6 +17,9 @@ struct ContentView: View {
 				NavigationLink(destination: HelloBinding()) {
 					Text("Hello Binding")
 				}
+				NavigationLink(destination: PodcatsPlayer()) {
+					Text("Podcats Player")
+				}
 			}
 			.listStyle(PlainListStyle())
 			.navigationBarTitle("Section 5")
