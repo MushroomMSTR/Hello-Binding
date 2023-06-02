@@ -8,11 +8,26 @@
 import SwiftUI
 
 struct ContentView: View {
-	var model = Dish.all()
-	@State private var isSpicy = false
+	@State private var selectedPage: Int? = nil
 	
 	var body: some View {
-		SpicyList(model: model, isSpicy: $isSpicy)
+		NavigationView {
+			List {
+				NavigationLink(destination: SpicyList(), tag: 1, selection: $selectedPage) {
+					Text("Spicy List") // 'init(destination:tag:selection:label:)' was deprecated in iOS 16.0: use NavigationLink(value:label:) inside a List within a NavigationStack or NavigationSplitView
+				}
+				// Add more navigation links for other pages
+				
+			}
+			.listStyle(PlainListStyle())
+			.onChange(of: selectedPage) { newValue in
+				if newValue == 1 {
+					// Handle selection for Spicy List page
+				}
+				// Add more cases for other pages
+			}
+			.navigationBarTitle("Hello Binding")
+		}
 	}
 }
 

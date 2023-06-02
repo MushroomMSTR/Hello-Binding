@@ -8,8 +8,7 @@
 import SwiftUI
 
 struct SpicyList: View {
-	var model: [Dish]
-	@Binding var isSpicy: Bool
+	@State private var isSpicy = false
 	
 	var body: some View {
 		List {
@@ -18,7 +17,7 @@ struct SpicyList: View {
 					.font(.title2)
 			}
 			
-			ForEach(model.filter({ $0.isSpicy == self.isSpicy })) { dish in
+			ForEach(Dish.all().filter({ $0.isSpicy == self.isSpicy })) { dish in
 				HStack {
 					Image(dish.imageURL)
 						.resizable()
@@ -38,11 +37,12 @@ struct SpicyList: View {
 				}
 			}
 		}
+		.navigationBarTitle("Spicy List")
 	}
 }
 
 struct SpicyList_Previews: PreviewProvider {
 	static var previews: some View {
-		SpicyList(model: Dish.all(), isSpicy: .constant(false))
+		SpicyList()
 	}
 }
